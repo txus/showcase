@@ -22,3 +22,5 @@ should automate this.
 This was made by [Josep M. Bach (Txus)](http://txustice.me) under the MIT
 license. I'm [@txustice][twitter] on twitter (where you should probably follow
 me!).
+
+[twitter]: https://twitter.com/txustice
