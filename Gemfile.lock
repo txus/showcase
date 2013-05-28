@@ -27,6 +27,7 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.9)
+    bcrypt-ruby (3.0.1)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -36,6 +37,12 @@ GEM
       execjs
     coffee-script-source (1.6.2)
     commonjs (0.2.6)
+    devise (3.0.0.rc)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      warden (~> 1.2.1)
+    diff-lcs (1.2.4)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -61,6 +68,7 @@ GEM
     mime-types (1.23)
     minitest (4.7.4)
     multi_json (1.7.3)
+    orm_adapter (0.4.0)
     polyglot (0.3.3)
     puma (2.0.1)
       rack (>= 1.1, < 2.0)
@@ -84,6 +92,17 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     ref (1.0.5)
+    rspec-core (2.13.1)
+    rspec-expectations (2.13.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.13.1)
+    rspec-rails (2.13.2)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 2.13.0)
+      rspec-expectations (~> 2.13.0)
+      rspec-mocks (~> 2.13.0)
     sass (3.2.9)
     sass-rails (4.0.0.rc1)
       railties (>= 4.0.0.beta, < 5.0)
@@ -127,17 +146,21 @@ GEM
     uglifier (2.1.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    warden (1.2.1)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  devise (~> 3.0.0.rc)
   jbuilder (~> 1.0.1)
   jquery-rails
   less-rails-bootstrap
   puma
   rails (= 4.0.0.rc1)
+  rspec-rails
   sass-rails (~> 4.0.0.rc1)
   sdoc
   slim

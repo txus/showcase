@@ -34,3 +34,9 @@ Showcase::Application.configure do
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
 end
+
+require 'repository'
+require 'memory_repository'
+Repository.register(:user, MemoryRepository::UserRepository.new)
+Repository.register(:status, MemoryRepository::StatusRepository.new)
+Repository.register(:following, MemoryRepository::FollowingRepository.new)

@@ -11,6 +11,8 @@ gem 'sass-rails', '~> 4.0.0.rc1'
 gem 'slim'
 gem 'puma'
 
+gem 'devise', '~> 3.0.0.rc'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -32,6 +34,10 @@ gem 'jbuilder', '~> 1.0.1'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development, :test do
+  gem 'rspec-rails'
 end
 
 # Use ActiveModel has_secure_password

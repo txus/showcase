@@ -78,3 +78,8 @@ Showcase::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 end
+
+require 'repository'
+require 'active_record_repository'
+Repository.register(:user, ActiveRecordRepository::UserRepository.new)
+Repository.register(:status, ActiveRecordRepository::StatusRepository.new)
